@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgX"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblInfoPlayer1"
+        app:srcCompat="@drawable/x" />
+
+    <ImageView
+        android:id="@+id/imgCerchio"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblInfoPlayer2"
+        app:srcCompat="@drawable/cerchio" />
+
+    <ImageView
+        android:id="@+id/imgGriglia"
+        android:layout_width="355dp"
+        android:layout_height="378dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lbInfo"
+        app:srcCompat="@drawable/griglia_tris" />
+
+    <LinearLayout
+        android:id="@+id/layoutPrimaCella"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/imgGriglia"
+        app:layout_constraintTop_toTopOf="@+id/imgGriglia"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSecondaCella"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imgGriglia"
+        app:layout_constraintStart_toStartOf="@+id/imgGriglia"
+        app:layout_constraintTop_toTopOf="@+id/imgGriglia"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTerzaCella"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="22dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imgGriglia"
+        app:layout_constraintTop_toTopOf="@+id/imgGriglia"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutQuartaCella"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/imgGriglia"
+        app:layout_constraintTop_toBottomOf="@+id/layoutPrimaCella"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutQuintaCella"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imgGriglia"
+        app:layout_constraintStart_toStartOf="@+id/imgGriglia"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSecondaCella"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSestaCella"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="21dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imgGriglia"
+        app:layout_constraintTop_toBottomOf="@+id/layoutTerzaCella"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSettimaCella"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/imgGriglia"
+        app:layout_constraintTop_toBottomOf="@+id/layoutQuartaCella"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutOttavaCella"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="7dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imgGriglia"
+        app:layout_constraintStart_toStartOf="@+id/imgGriglia"
+        app:layout_constraintTop_toBottomOf="@+id/layoutQuintaCella"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutNonaCella"
+        android:layout_width="@dimen/dim_cerchio_x"
+        android:layout_height="@dimen/dim_cerchio_x"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="21dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/imgGriglia"
+        app:layout_constraintTop_toBottomOf="@+id/layoutSestaCella"></LinearLayout>
+
+    <TextView
+        android:id="@+id/lblInfoPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#F83030"
+        android:fontFamily="monospace"
+        android:text="@string/lblPlayer1"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/imgX"
+        app:layout_constraintTop_toBottomOf="@+id/imgGriglia" />
+
+    <TextView
+        android:id="@+id/lblInfoPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:background="#2D94CC"
+        android:fontFamily="monospace"
+        android:text="@string/lblPlayer2"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/imgCerchio"
+        app:layout_constraintTop_toBottomOf="@+id/imgGriglia" />
+
+    <TextView
+        android:id="@+id/lbInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

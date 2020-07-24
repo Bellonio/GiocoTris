@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Gioco tris</string>
+
+    <string name="lblPlayer1">Player 1</string>
+    <string name="lblPlayer2">Player 2</string>
+
+    <string name="toccaPlayer1">PLAYER 1 TOCCA A TE !</string>
+    <string name="toccaPlayer2">PLAYER 2 TOCCA A TE !</string>
+    <string name="vincitore">ABBIAMO UN VINCITORE !!!</string>
+    <string name="inziate">Iniziate!\nCHE VINCA IL MIGLIORE !</string>
+    <string name="menu">RICOMINCIA LA PARTITA</string>
+
+</resources>
